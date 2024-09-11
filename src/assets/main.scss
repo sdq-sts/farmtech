@@ -1,0 +1,17 @@
+@import 'normalize.css/normalize';
+
+:root {
+  --max-site-width: 1200px;
+  --color-bg: #fef8f8;
+  --color-accent: #ef6f6f;
+  --color-text: #4e4644;
+}
+
+#app {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  min-height: 100vh;
+}
