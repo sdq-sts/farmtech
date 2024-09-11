@@ -2,16 +2,53 @@
 
 <template>
   <section class="site-hero">
-    <h1>Conheça o Covidômetro</h1>
-    <p>
-      Fique atualizado com velocidade e transparência. O Covidômetro é uma ferramenta que mostra
-      para você em tempo real o número de casos e óbitos relacionados à pandemia da COVID-19 ao
-      redor do mundo.
-    </p>
+    <div class="site-hero__content">
+      <h1 class="site-hero__title">Conheça o Covidômetro</h1>
+      <p class="site-hero__text">
+        Fique atualizado com velocidade e transparência. O Covidômetro é uma ferramenta que mostra
+        para você em tempo real o número de casos e óbitos relacionados à pandemia da COVID-19 ao
+        redor do mundo.
+      </p>
+    </div>
+
+    <div class="site-hero__doctors">
+      <img
+        class="site-hero__doctors-img"
+        src="@/assets/imgs/doctors.svg"
+        alt="Covidômetro doctors"
+      />
+    </div>
   </section>
 </template>
 
 <style scoped lang="scss">
-// .site-hero {
-// }
+.site-hero {
+  display: flex;
+  padding-top: 4rem;
+  justify-content: space-between;
+
+  &__content {
+    max-width: 50%;
+    padding: 4rem 0;
+  }
+
+  &__title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-family: var(--font-title);
+    color: var(--color-text);
+  }
+
+  &__text {
+    font-size: 1.15rem;
+    line-height: 1.5;
+    color: var(--color-text);
+  }
+
+  &__doctors-img {
+    width: 100%;
+    transform: scale(1.2) translateX(-10%);
+  }
+}
 </style>
