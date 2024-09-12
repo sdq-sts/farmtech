@@ -1,20 +1,29 @@
 @import 'normalize.css/normalize';
-@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Della+Respira&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
 
 :root {
   --max-site-width: 1200px;
   --color-bg: #fef8f8;
   --color-accent: #ef6f6f;
   --color-text: #4e4644;
-  --font-title: 'Spectral', sans-serif;
+  --font-title: 'Della Respira', sans-serif;
 }
 
 #app {
   background-color: var(--color-bg);
   color: var(--color-text);
-  font-family: 'Roboto', sans-serif;
+  font-family: 'League Spartan', sans-serif;
   font-size: 16px;
   line-height: 1.5;
   min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-title);
 }

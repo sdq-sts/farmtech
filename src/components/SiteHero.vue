@@ -36,8 +36,7 @@
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    font-family: var(--font-title);
-    color: var(--color-text);
+    letter-spacing: 0.15rem;
   }
 
   &__text {
