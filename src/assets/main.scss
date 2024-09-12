@@ -3,11 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
 
 :root {
-  --max-site-width: 1200px;
+  --max-site-width: 1280px;
   --color-bg: #fef8f8;
   --color-accent: #ef6f6f;
   --color-text: #4e4644;
   --font-title: 'Della Respira', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 #app {

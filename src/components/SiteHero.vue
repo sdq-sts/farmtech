@@ -26,6 +26,7 @@
   display: flex;
   padding-top: 4rem;
   justify-content: space-between;
+  z-index: 1;
 
   &__content {
     max-width: 50%;
@@ -45,9 +46,13 @@
     color: var(--color-text);
   }
 
+  &__doctors {
+    z-index: 0;
+  }
+
   &__doctors-img {
     width: 100%;
-    transform: scale(1.2) translateX(-10%);
+    transform: scale(1.1) translateX(-5%);
   }
 }
 </style>
