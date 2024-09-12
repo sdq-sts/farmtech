@@ -26,7 +26,6 @@
   display: flex;
   padding-top: 4rem;
   justify-content: space-between;
-  z-index: 1;
 
   &__content {
     max-width: 50%;
