@@ -43,9 +43,8 @@ const search = ref('')
   }
 
   &__title {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin: 0 0 1rem 0;
-    letter-spacing: 1px;
   }
 
   &__form {
@@ -61,7 +60,7 @@ const search = ref('')
     fill: #ff6b6b;
     width: 24px;
     height: 24px;
-    transform: scale(0.9) translateY(-4px);
+    transform: scale(0.8) translateY(-4px);
   }
 
   &__input {

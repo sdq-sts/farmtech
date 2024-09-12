@@ -34,10 +34,10 @@
   }
 
   &__title {
-    font-size: 3rem;
+    font-size: 3.2rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    letter-spacing: 0.15rem;
+    letter-spacing: 1px;
   }
 
   &__text {

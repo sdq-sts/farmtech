@@ -1,13 +1,14 @@
 @import 'normalize.css/normalize';
-@import url('https://fonts.googleapis.com/css2?family=Della+Respira&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral&display=swap');
 
 :root {
   --max-site-width: 1280px;
   --color-bg: #fef8f8;
   --color-accent: #ef6f6f;
   --color-text: #4e4644;
-  --font-title: 'Della Respira', sans-serif;
+  --font-primary: 'Spectral', sans-serif;
+  --font-secondary: 'League Spartan', sans-serif;
 }
 
 * {
@@ -17,7 +18,7 @@
 #app {
   background-color: var(--color-bg);
   color: var(--color-text);
-  font-family: 'League Spartan', sans-serif;
+  font-family: var(--font-secondary);
   font-size: 16px;
   line-height: 1.5;
   min-height: 100vh;
@@ -29,5 +30,5 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-title);
+  font-family: var(--font-primary);
 }
