@@ -14,7 +14,7 @@
   padding: 1rem 0;
   width: 100%;
   background-color: #fff;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 4px 8px 0px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 0px 6px 0px;
 
   &__container {
     max-width: var(--max-site-width);

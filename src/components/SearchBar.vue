@@ -3,6 +3,11 @@ import { ref } from 'vue'
 import SearcherIcon from './SearcherIcon.vue'
 
 const search = ref('')
+const emits = defineEmits(['search'])
+
+const searchEvent = () => {
+  emits('search', search.value)
+}
 </script>
 
 <template>
@@ -13,6 +18,7 @@ const search = ref('')
       <form class="covid-searcher__form">
         <SearcherIcon class="covid-searcher__icon" />
         <input
+          @input="searchEvent"
           class="covid-searcher__input"
           type="text"
           placeholder="Digite o nome do país"
@@ -68,7 +74,6 @@ const search = ref('')
     outline: none;
     flex: 1;
     font-size: 16px;
-    color: #a9a9a9;
     padding: 5px;
   }
 
