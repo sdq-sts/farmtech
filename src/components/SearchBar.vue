@@ -86,4 +86,18 @@ const searchEvent = () => {
     border-color: var(--color-accent);
   }
 }
+
+@media (max-width: $mobile-small) {
+  .covid-searcher {
+    padding: 2rem 1rem;
+
+    &__content {
+      padding: 0 1rem;
+    }
+
+    &__title {
+      font-size: 1.4rem;
+    }
+  }
+}
 </style>

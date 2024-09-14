@@ -21,4 +21,10 @@
     margin: 0 auto;
   }
 }
+
+@media (max-width: $desktop-small) {
+  .site-header {
+    padding: 1rem 2rem;
+  }
+}
 </style>

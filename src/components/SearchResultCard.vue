@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { defineProps } from 'vue'
+import { defineProps, onMounted, ref } from 'vue'
 
 type Props = {
   country: string
@@ -14,6 +14,14 @@ withDefaults(defineProps<Props>(), {
   deaths: 0,
   fatalityRate: 0
 })
+
+const windowWidth = ref(window.innerWidth)
+
+onMounted(() => {
+  window.addEventListener('resize', () => {
+    windowWidth.value = window.innerWidth
+  })
+})
 </script>
 
 <template>
@@ -21,7 +29,9 @@ withDefaults(defineProps<Props>(), {
     <h3 class="covid-country-data__country">{{ country }}</h3>
     <div class="covid-country-data__stats">
       <div class="covid-country-data__stat">
-        <span class="covid-country-data__label">Total de casos</span>
+        <span class="covid-country-data__label">{{
+          windowWidth < 540 ? 'Casos' : 'Total de casos'
+        }}</span>
         <span class="covid-country-data__value">{{ totalCases.toLocaleString('pt-br') }}</span>
       </div>
       <div class="covid-country-data__stat">
@@ -81,5 +91,23 @@ withDefaults(defineProps<Props>(), {
   font-weight: 700;
   color: var(--color-accent);
   font-family: var(--font-primary);
+}
+
+@media (max-width: $mobile-small) {
+  .covid-country-data {
+    padding: 1rem;
+  }
+
+  .covid-country-data__country {
+    font-size: 1.2rem;
+  }
+
+  .covid-country-data__label {
+    font-size: 1rem;
+  }
+
+  .covid-country-data__value {
+    font-size: 1.2rem;
+  }
 }
 </style>

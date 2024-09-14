@@ -54,4 +54,51 @@
     transform: scale(1.1) translateX(-5%);
   }
 }
+
+@media (max-width: $tablet-landscape) {
+  .site-hero {
+    &__content {
+      margin-bottom: 2rem;
+    }
+
+    &__title {
+      margin-top: 0;
+    }
+    &__doctors-img {
+      transform: scale(1.2) translateX(-10%);
+    }
+  }
+}
+
+@media (max-width: $tablet-portrait) {
+  .site-hero {
+    flex-direction: column;
+    align-items: center;
+
+    &__content {
+      max-width: 100%;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    &__doctors-img {
+      transform: scale(1) translateX(0);
+    }
+  }
+}
+
+@media (max-width: $mobile-small) {
+  .site-hero {
+    padding-top: 2rem;
+
+    &__title {
+      font-size: 2.5rem;
+      line-height: 1.3;
+    }
+
+    &__text {
+      font-size: 1rem;
+    }
+  }
+}
 </style>
