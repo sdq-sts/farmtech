@@ -1,12 +1,19 @@
 <script setup lang="ts">
 import { defineProps } from 'vue'
 
-defineProps<{
+type Props = {
   country: string
   totalCases: number
   deaths: number
   fatalityRate: number
-}>()
+}
+
+withDefaults(defineProps<Props>(), {
+  country: '',
+  totalCases: 0,
+  deaths: 0,
+  fatalityRate: 0
+})
 </script>
 
 <template>
@@ -19,11 +26,11 @@ defineProps<{
       </div>
       <div class="covid-country-data__stat">
         <span class="covid-country-data__label">Mortes</span>
-        <span class="covid-country-data__value">{{ totalCases.toLocaleString('pt-br') }}</span>
+        <span class="covid-country-data__value">{{ deaths.toLocaleString('pt-br') }}</span>
       </div>
       <div class="covid-country-data__stat">
         <span class="covid-country-data__label">Fatalidade</span>
-        <span class="covid-country-data__value">{{ fatalityRate }}%</span>
+        <span class="covid-country-data__value">{{ (fatalityRate * 100).toFixed(2) }}%</span>
       </div>
     </div>
   </div>
