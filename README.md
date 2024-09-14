@@ -7,7 +7,7 @@
 
 A aplicação está hospedada no Railway e pode ser acessada através deste link:
 
-**[Acesse o FarmTech Online 🚀](https://farmtech.up.railway.app/)**
+**[Acesse o FarmTech/Covidômetro Online 🚀](https://farmtech.up.railway.app/)**
 
 ## 📚 Sobre o Projeto
 
