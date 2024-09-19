@@ -111,7 +111,6 @@ src/
 │   ├── useFetchAllRegions.ts
 │   └── useFetchReportsTotal.ts
 ├── main.ts
-├── project-structure.txt
 ├── router
 │   └── index.ts
 ├── services
