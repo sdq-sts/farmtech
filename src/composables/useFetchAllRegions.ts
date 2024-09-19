@@ -28,7 +28,7 @@ export const useFetchAllRegions = async () => {
   const data = ref<Region[]>([])
   const errorStatus = ref<number>()
 
-  const createAccount = async () => {
+  const fetchAllRegions = async () => {
     status.value = 'LOADING'
 
     try {
@@ -40,7 +40,7 @@ export const useFetchAllRegions = async () => {
     }
   }
 
-  await createAccount()
+  await fetchAllRegions()
 
   return { data, error, status, errorStatus }
 }

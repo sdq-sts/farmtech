@@ -28,7 +28,7 @@ export const useFetchReportsTotal = async ({ iso, name }: Region) => {
   const data = ref<ReportTotalResponse['data'] & { name: string }>()
   const errorStatus = ref<number>()
 
-  const createAccount = async () => {
+  const fetchReportsTotal = async () => {
     status.value = 'LOADING'
 
     try {
@@ -42,7 +42,7 @@ export const useFetchReportsTotal = async ({ iso, name }: Region) => {
     }
   }
 
-  await createAccount()
+  await fetchReportsTotal()
 
   return { data, error, status, errorStatus }
 }
